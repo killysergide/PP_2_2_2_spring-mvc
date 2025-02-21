@@ -18,9 +18,9 @@
     </tr>
 
     <tr th:each="car : ${carList}">
-        <td th:utext="${car.make}"></td>
-        <td th:utext="${car.model}"></td>
-        <td th:utext="${car.year}"></td>
+        <td th:utext="${car.getMake()}"></td>
+        <td th:utext="${car.getModel()}"></td>
+        <td th:utext="${car.getYear()}"></td>
     </tr>
 
 </table>
